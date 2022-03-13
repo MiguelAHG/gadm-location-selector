@@ -7,6 +7,11 @@ import numpy as np
 
 from app_location_selector import location_selector_feature
 
-if __name__ == "__main__":
+@st.cache(suppress_st_warning = True, allow_output_mutation = True)
+def get_data():
     gdf = gpd.read_file("gadm36_PHL.gpkg")
+    return gdf
+
+if __name__ == "__main__":
+    gdf = get_data()
     location_selector_feature(finest_level = 3, gdf = gdf)
