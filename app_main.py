@@ -14,4 +14,10 @@ def get_data():
 
 if __name__ == "__main__":
     gdf = get_data()
-    location_selector_feature(finest_level = 3, gdf = gdf)
+
+    finest_level = st.radio(
+        "Finest Level",
+        options = [1, 2, 3],
+    )
+
+    location_selector_feature(finest_level = finest_level, gdf = gdf)
