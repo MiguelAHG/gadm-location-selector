@@ -5,8 +5,12 @@ import pandas as pd
 import numpy as np
 
 def feature_location_selector(gdf, finest_level, level_names):
-    """Template function for location selector. Returns the GID and the list of the parts of the location name.
-inner_func: provide a function and it will be run at the bottom of each selectbox."""
+    """Location selector feature of the app.
+
+Parameters
+gdf: geopandas DataFrame, table of GADM data.
+finest_level: integer, representation of the level of the location, from 1 to 3.
+level_names: pandas Series, with level numbers in the index and level names in the values."""
 
     # List of columns to take from GDF.
     # Should include only GID and NAME columns down to the finest level.
