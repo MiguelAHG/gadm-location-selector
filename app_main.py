@@ -36,3 +36,6 @@ if __name__ == "__main__":
         finest_level = finest_level,
         level_names = level_names,
     )
+
+    with st.expander("Credits", expanded = False):
+        st.markdown("""This web app was developed by Miguel Antonio H. Germar as a supplement to another project. The location data used in this app is from the Global Administrative Areas (GADM) database, version 3.4, whose license permits non-commercial use only. The complete reference for GADM is shown below.\n\nUniversity of Berkeley, Museum of Vertebrate Zoology and the International Rice Research Institute. (2018, April). Global Administrative Areas (GADM) Version 3.4. GADM. https://gadm.org""")
