@@ -17,6 +17,8 @@ if __name__ == "__main__":
 
     st.markdown("# GADM Location Selector")
 
+    st.markdown("This web app allows you to select any administrative area in the Philippines and obtain its corresponding GID value from the GADM database. Buttons are provided so that you can copy the information with one click.")
+
     level_names = pd.Series(
         {
             1: "province",
