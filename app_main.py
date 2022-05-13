@@ -9,7 +9,7 @@ from app_location_selector import feature_location_selector
 
 @st.cache(suppress_st_warning = True, allow_output_mutation = True)
 def get_data():
-    gdf = gpd.read_file("gadm36_PHL.gpkg")
+    gdf = gpd.read_file("./geo_data/gadm36_PHL.gpkg")
     return gdf
 
 if __name__ == "__main__":
