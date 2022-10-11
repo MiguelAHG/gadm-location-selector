@@ -17,7 +17,9 @@ if __name__ == "__main__":
 
     st.markdown("# GADM Location Selector")
 
-    st.markdown("This web app allows you to select any administrative area in the Philippines and obtain its corresponding GID value from the GADM database. Buttons are provided so that you can copy the information with one click.")
+    st.markdown("This web app allows you to select any administrative area in the Philippines and obtain its corresponding GID value from the GADM database.")
+    # # This part is commented out because there is no more copy button.
+    # st.markdown("Buttons are provided so that you can copy the information with one click.")
 
     st.info("The source code for the app is publicly hosted on the following repository: https://github.com/MiguelAHG/gadm-location-selector\n\n We do not store data about the options that you choose on this app.")
 

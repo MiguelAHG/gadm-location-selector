@@ -68,16 +68,17 @@ level_names: pandas Series, with level numbers in the index and level names in t
 
             for info_type, info_value in display_dict.items():
 
-                st.markdown(f"{info_type}: **{info_value}**")
+                st.markdown(f"{info_type}: `{info_value}`")
 
-                clipboard_button = st.button(
-                    f"Copy {info_type} to Clipboard",
-                    key = f"clipboard_button {level} {info_type}",
-                )
+                # # Button to copy text to clipboard. Commented out because it doesn't work in the Streamlit app deployed online.
+                # clipboard_button = st.button(
+                #     f"Copy {info_type} to Clipboard",
+                #     key = f"clipboard_button {level} {info_type}",
+                # )
 
-                if clipboard_button:
-                    cb_df = pd.DataFrame([info_value])
-                    cb_df.to_clipboard(index = False, header = False)
+                # if clipboard_button:
+                #     cb_df = pd.DataFrame([info_value])
+                #     cb_df.to_clipboard(index = False, header = False)
 
         # Use a line to separate the levels from each other.
         st.markdown("---")
