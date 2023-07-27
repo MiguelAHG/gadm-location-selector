@@ -7,7 +7,7 @@ import numpy as np
 
 from app_location_selector import feature_location_selector
 
-@st.cache(suppress_st_warning = True, allow_output_mutation = True)
+@st.cache_data(ttl = None)
 def get_data():
     gdf = gpd.read_file("./geo_data/gadm36_PHL.gpkg")
     return gdf
